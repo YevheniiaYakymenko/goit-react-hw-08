@@ -5,8 +5,11 @@ import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/contactsOps";
-import { selectContactsLoading, selectContactsError } from "../../redux/contactsSlice"
+import { fetchContacts } from "../../redux/contacts/operations";
+import {
+  selectContactsError,
+  selectContactsLoading,
+} from "../../redux/contacts/selectors";
 
 export default function App() {
   const dispatch = useDispatch();
