@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 255, 0.5);
+  font-weight: 600;
+}

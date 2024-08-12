@@ -10,6 +10,7 @@ import ContactList from "../../components/ContactList/ContactList";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Loader from "../../components/Loader/Loader";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
+import { Toaster } from "react-hot-toast";
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
@@ -23,11 +24,12 @@ export default function ContactsPage() {
   return (
     <div>
       <h1>Phonebook</h1>
+      {loading && <Loader />}
+      {isError && <ErrorMessage message={"Sorry! Something get wrong!"} />}
       <ContactForm />
       <SearchBox />
       <ContactList />
-      {loading && <Loader />}
-      {isError && <ErrorMessage message={"Sorry! Something get wrong!"} />}
+      <Toaster />
     </div>
   );
 }

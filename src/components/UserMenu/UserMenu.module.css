@@ -1,0 +1,19 @@
+.wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.span {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.btn {
+  background-color: rgb(133, 133, 253);
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
